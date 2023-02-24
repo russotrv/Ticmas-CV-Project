@@ -133,25 +133,31 @@ h1,h2{
     background-color: var(--deg-animacion-2);
     box-shadow: var(--sombras);
 }
-ul{
-    list-style: none;
-}
 
 #lista-experiencia, #habilidades{
     margin: 0.5rem 0;
-    padding: 0.5rem
+    padding: 0.5rem;
+    list-style: none;
 }
-
 
 #lista-experiencia li, #habilidades li{
     padding: 0.6rem;
 }
 
 #lista-experiencia li::before{
-    font-family: 'Font Awesome 6 Free';
-    content: '\f02b';
+    content: '✓';
+    padding-right: 0.21rem;
 }
 
+#hab-personales li::before{
+    content:'》';
+    padding-right: 0.21rem;
+}
+
+#hab-informaticas li::before{
+    content:'⌘';
+    padding-right: 0.21rem;
+}
 
 #habilidades{
     display:flex;
